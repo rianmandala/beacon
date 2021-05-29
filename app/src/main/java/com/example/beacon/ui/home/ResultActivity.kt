@@ -6,6 +6,10 @@ import com.example.beacon.databinding.ActivityResultBinding
 
 class ResultActivity : AppCompatActivity() {
 
+    companion object {
+        const val EXTRA_DATA = "extra_data"
+    }
+
     private lateinit var binding: ActivityResultBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +19,7 @@ class ResultActivity : AppCompatActivity() {
 
         supportActionBar!!.setDisplayShowHomeEnabled(true)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

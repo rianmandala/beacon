@@ -9,4 +9,12 @@
     <string name="ok">OK</string>
     <string name="result">Hasil Pengecekan</string>
     <string name="please_input_nik">Please input your NIK first</string>
+    <string name="tanggungan">Jumlah Tanggungan</string>
+    <string name="pendapatan">Pendapatan</string>
+    <string name="status">Status Kepemilikan</string>
+    <string name="lantai">Material Lantai</string>
+    <string name="dinding">Material Dinding</string>
+    <string name="luas">Luas Bangunan</string>
+    <string name="jenis">Jenis Transformasi</string>
+    <string name="cek">Cek Kelayakan</string>
 </resources>

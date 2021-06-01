@@ -1,4 +1,4 @@
-package com.example.beacon.ui.home
+package com.example.beacon.ui.home.eligibility
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,9 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import com.example.beacon.R
 import com.example.beacon.databinding.FragmentEligibilityCheckBinding
+import com.example.beacon.ui.checkresult.ResultActivity
 
 class EligibilityCheckFragment : Fragment(), View.OnClickListener {
     private lateinit var binding: FragmentEligibilityCheckBinding

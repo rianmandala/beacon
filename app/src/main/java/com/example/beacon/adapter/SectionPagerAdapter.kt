@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.beacon.R
-import com.example.beacon.ui.home.EligibilityCheckFragment
-import com.example.beacon.ui.home.SocialAssistanceCheckFragment
+import com.example.beacon.ui.home.eligibility.EligibilityCheckFragment
+import com.example.beacon.ui.home.socialassistance.SocialAssistanceCheckFragment
 
 class SectionPagerAdapter(private val mContext: Context, fm: FragmentManager) :
     FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {

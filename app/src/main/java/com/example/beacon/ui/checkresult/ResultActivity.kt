@@ -1,4 +1,4 @@
-package com.example.beacon.ui.home
+package com.example.beacon.ui.checkresult
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

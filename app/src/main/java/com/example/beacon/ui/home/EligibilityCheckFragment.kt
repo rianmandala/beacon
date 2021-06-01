@@ -29,7 +29,7 @@ class EligibilityCheckFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            binding.btnCek -> {
+            binding.btnCek.id -> {
                 val moveIntent = Intent(activity, ResultActivity::class.java)
                 startActivity(moveIntent)
             }

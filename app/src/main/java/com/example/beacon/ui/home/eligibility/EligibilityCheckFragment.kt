@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.beacon.databinding.FragmentEligibilityCheckBinding
 import com.example.beacon.ui.checkresult.ResultActivity
+import com.example.beacon.utils.Model
 
 class EligibilityCheckFragment : Fragment(), View.OnClickListener {
     private lateinit var binding: FragmentEligibilityCheckBinding
@@ -26,10 +27,11 @@ class EligibilityCheckFragment : Fragment(), View.OnClickListener {
         binding.btnCek.setOnClickListener(this)
     }
 
-    override fun onClick(v: View?) {
-        when (v?.id) {
+    override fun onClick(v: View) {
+        when (v.id) {
             binding.btnCek.id -> {
                 val moveIntent = Intent(activity, ResultActivity::class.java)
+                    moveIntent.putExtra(ResultActivity.EXTRA_DATA, "Data")
                 startActivity(moveIntent)
             }
         }

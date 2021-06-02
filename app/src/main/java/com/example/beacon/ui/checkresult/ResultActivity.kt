@@ -2,8 +2,9 @@ package com.example.beacon.ui.checkresult
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import com.example.beacon.R
 import com.example.beacon.databinding.ActivityResultBinding
-import com.example.beacon.utils.Model
 
 class ResultActivity : AppCompatActivity() {
 
@@ -22,12 +23,19 @@ class ResultActivity : AppCompatActivity() {
         supportActionBar!!.setDisplayShowHomeEnabled(true)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         
-        val intent = intent.getParcelableExtra<Model>(EXTRA_DATA) as Model
-        with(intent){
-            binding.imageView.setImageResource(image)
-            val description =
-                "Hasil Pengecekan: \n$description"
-            binding.description.text = model.description
+        val status = intent.getBooleanExtra(EXTRA_DATA,true)
+        if(status){
+            with(binding){
+                imageView.setImageResource(R.drawable.img1)
+                progressBarDetail.visibility= View.GONE
+                description.text = getString(R.string.pass_criteria,"termasuk")
+            }
+        }else{
+            with(binding){
+                imageView.setImageResource(R.drawable.img2)
+                progressBarDetail.visibility= View.GONE
+                description.text = getString(R.string.pass_criteria,"tidak termasuk")
+            }
         }
     }
 

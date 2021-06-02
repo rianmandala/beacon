@@ -19,4 +19,5 @@
     <string name="jenis">Jenis Transformasi</string>
     <string name="cek">Cek Kelayakan</string>
     <string name="description">Description</string>
+    <string name="pass_criteria">Berdasarkan kriteria-kriteria yang anda kirimkan, anda %s kriteria yang layak mendapatkan bantuan pangan non tunai.</string>
 </resources>

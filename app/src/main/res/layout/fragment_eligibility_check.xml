@@ -107,7 +107,8 @@
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:text="@string/cek" />
+            android:text="@string/cek"
+            android:layout_marginBottom="40dp"/>
 
     </LinearLayout>
 </ScrollView>

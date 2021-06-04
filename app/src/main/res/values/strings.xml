@@ -2,7 +2,7 @@
     <string name="app_name">Beacon</string>
     <string name="cek_kelayakan_tab_title">Cek Kelayakan</string>
     <string name="cek_bansos_tab_title">Cek Bansos</string>
-    <string name="social_asistance_template_result">Warga dengan NIK %s merupakan penerima bantuan pangan non tunai</string>
+    <string name="social_asistance_template_result">Warga dengan NIK %s %s penerima bantuan pangan non tunai</string>
     <string name="citizen_not_found">Warga dengan NIK %s tidak ditemukan</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nik">NIK</string>

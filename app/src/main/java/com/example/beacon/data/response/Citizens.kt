@@ -8,7 +8,6 @@ data class Citizens(
     var floor_material: Int?=0,
     var wall_material: Int?=0,
     var building_area: Int?=0,
-    var asset: Int?=0,
     var transportation_type: Int?=0,
-    var social_assistance_status: Int?=0,
+    var social_assistance_status: Boolean?=false,
 )

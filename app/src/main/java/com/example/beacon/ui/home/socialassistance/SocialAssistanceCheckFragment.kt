@@ -30,12 +30,13 @@ class SocialAssistanceCheckFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         socialAssistanceCheckViewModel.citizens.observe(requireActivity()) { citizens->
-            if(citizens?.social_assistance_status == 1 && binding.edtNik.text.toString() == citizens.nik){
-                MaterialAlertDialogBuilder(requireActivity())
-                    .setTitle(getString(R.string.result))
-                    .setMessage(getString(R.string.social_asistance_template_result, citizens.nik))
-                    .setPositiveButton(getString(R.string.ok)){ _, _ ->  }
-                    .show()
+            if(binding.edtNik.text.toString() == citizens?.nik){
+                if(citizens.social_assistance_status==true){
+                    showDialog(citizens.nik, "termasuk dalam daftar")
+                }else{
+                    showDialog(citizens.nik, "tidak masuk dalam daftar")
+                }
+
             }else{
                 Toast.makeText(
                     requireActivity(),
@@ -56,5 +57,13 @@ class SocialAssistanceCheckFragment : Fragment() {
                 ).show()
             }
         }
+    }
+
+    private fun showDialog(nik: String?, result: String){
+        MaterialAlertDialogBuilder(requireActivity())
+            .setTitle(getString(R.string.result))
+            .setMessage(getString(R.string.social_asistance_template_result, nik, result))
+            .setPositiveButton(getString(R.string.ok)){ _, _ ->  }
+            .show()
     }
 }

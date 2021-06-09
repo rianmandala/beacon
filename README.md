@@ -1,33 +1,33 @@
 # beacon
 ## Team Member
 
--James Ng
--Rian Mandala Putra
--Siti Rohmah
--Steven Pheliayanto
+- James Ng
+- Rian Mandala Putra
+- Siti Rohmah
+- Steven Pheliayanto
 
 ## Main Purpose
 
->Beacon’s main objective is to provide 
->a simpler way for citizens to check 
->if they are eligible for 
->specific social assistance provided by the government.  
+> Beacon’s main objective is to provide 
+> a simpler way for citizens to check 
+> if they are eligible for 
+> specific social assistance provided by the government.  
 
 ## Our Main Features
 
--Cek Kelayakan / Check Eligibility
--Cek Bansos / Check Social Assistance
+- Cek Kelayakan / Check Eligibility
+- Cek Bansos / Check Social Assistance
 
 ## Check Eligibility (Cek Kelayakan)
 
 The criteria are determined based on research journals that have been done previously:
 
--number_of_dependents
--monthly income
--home_ownership_status
--floor_material
--wall_material
--building_area
+- number_of_dependents
+- monthly income
+- home_ownership_status
+- floor_material
+- wall_material
+- building_area
 
 ## Check Social Assistance (Cek Bansos)
 

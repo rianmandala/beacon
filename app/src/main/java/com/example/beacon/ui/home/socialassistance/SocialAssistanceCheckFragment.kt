@@ -31,10 +31,10 @@ class SocialAssistanceCheckFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         socialAssistanceCheckViewModel.citizens.observe(requireActivity()) { citizens->
             if(binding.edtNik.text.toString() == citizens?.nik){
-                if(citizens.social_assistance_status==true){
-                    showDialog(citizens.nik, "termasuk dalam daftar")
+                if(citizens.status_social_assistance==true){
+                    showDialog(citizens.name,citizens.nik, "termasuk dalam daftar")
                 }else{
-                    showDialog(citizens.nik, "tidak masuk dalam daftar")
+                    showDialog(citizens.name,citizens.nik, "tidak masuk dalam daftar")
                 }
 
             }else{
@@ -59,10 +59,10 @@ class SocialAssistanceCheckFragment : Fragment() {
         }
     }
 
-    private fun showDialog(nik: String?, result: String){
+    private fun showDialog(name: String?,nik: String?, result: String){
         MaterialAlertDialogBuilder(requireActivity())
             .setTitle(getString(R.string.result))
-            .setMessage(getString(R.string.social_asistance_template_result, nik, result))
+            .setMessage(getString(R.string.social_asistance_template_result,name, nik, result))
             .setPositiveButton(getString(R.string.ok)){ _, _ ->  }
             .show()
     }

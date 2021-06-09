@@ -1,4 +1,4 @@
-# beacon
+# Beacon
 ## Team Member
 
 - James Ng
